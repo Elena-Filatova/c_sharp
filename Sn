@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Laba2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, x = 1, s = 0;
+            Console.WriteLine("n=");
+            n = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                //k = i % 2;
+                if ((i % 2) != 0) x = (int)Math.Pow(i, i);
+                else x = (int)-Math.Pow(i, i);
+                s = s + x;
+            }
+            {
+                Console.WriteLine("s=" + s);
+                Console.ReadLine();
+            }
+        }
+    }
+}
